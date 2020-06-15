@@ -1,54 +1,71 @@
 {
     "basics": {
-        "name": "John Doe",
+        "name": "Tanner Hallman",
         "label": "Programmer",
         "picture": "",
-        "email": "john.doe@mail.com",
-        "phone": "(912) 555-4321",
-        "website": "http://johndoe.com",
-        "summary": "A summary of John Doe...",
+        "email": "tanner.hallman@gmail.com",
+        "phone": "",
+        "website": "http://tannerhallman.com",
+        "summary": "I prefer bagel bits to pizza rolls.",
         "location": {
             "address": "2712 Broadway St",
             "postalCode": "CA 94115",
-            "city": "San Francisco",
+            "city": "San Francisco, US, US, US, US",
             "countryCode": "US",
-            "region": "California"
+            "region": "California",
+            "name": "San Francisco, US, US, US, US"
         },
-        "profiles": [
-            {
-                "network": "Twitter",
-                "username": "john",
-                "url": "http://twitter.com/john"
-            }
-        ]
+        "profiles": [{ "network": "Twitter", "username": "hallmanitor", "url": "http://twitter.com/hallmanitor" }]
     },
     "work": [
         {
-            "name": "Company 2 ",
-            "position": "Worker",
-            "website": "http://company.com",
-            "startDate": "2014-01-01",
-            "summary": "Description...",
-            "location": "Paris, France",
-            "highlights": ["Started the company"]
+            "index": 0,
+            "id": "440a00c3-8090-4268-b118-5a49fe030e9e",
+            "name": "Coworks",
+            "position": "Cofounder & CTO",
+            "place": { "name": "Raleigh, NC" },
+            "startDate": "2017-06-14",
+            "summary": "What started as a side-project became an independent software startup delivering high quality coworking management products helping small independent coworking spaces compete with WeWork on a technological level.",
+            "location": "Raleigh, NC",
+            "stillEmployed": true
         },
         {
-            "name": "What a nice office",
-            "position": "President",
-            "website": "http://company.com",
-            "startDate": "2013-01-01",
-            "endDate": "2014-01-01",
-            "summary": "Description...",
-            "location": "Paris, France",
-            "highlights": ["Started the company"]
+            "index": 1,
+            "id": "b65a32bc-ad97-4c36-b552-cc6aa9622cab",
+            "name": "Lithios",
+            "position": "CTO",
+            "place": { "name": "Raleigh, NC" },
+            "startDate": "2018-06-14",
+            "endDate": "2019-06-01",
+            "summary": "Promoted to CTO after continued success in delivering high quality products. Played a large part in continued internal efficiency and project management.",
+            "location": "Raleigh, NC",
+            "stillEmployed": false
         },
         {
-            "name": "What a nice experience",
-            "position": "Lead dev",
+            "index": 2,
+            "id": "f3fcf1c3-5043-4d67-9b84-72afd566fad2",
+            "name": "Lithios",
+            "position": "Lead Android Developer",
+            "place": { "name": "Raleigh, NC" },
+            "startDate": "2017-06-14",
+            "endDate": "2018-06-01",
+            "summary": "Worked as a projected manager & lead android developer for a software consulting company. I interfaced with clients and delivered high quality products.",
+            "location": "Raleigh, NC",
+            "stillEmployed": false
+        },
+        {
+            "name": "Credit Suisse",
+            "position": "Disaster Recovery",
             "website": "http://company.com",
-            "summary": "Description...",
-            "location": "Paris, France",
-            "highlights": ["Started the company"]
+            "summary": "Worked in making sure that servers had proper failover procedure in case of a network disaster, both natural or man-made.",
+            "location": "Raleigh, NC",
+            "highlights": ["Started the company"],
+            "id": "a3d5db7e-6d36-459a-8fc6-6c500d492312",
+            "startDate": "2015-06-14",
+            "endDate": "2017-06-01",
+            "place": { "name": "Raleigh, NC" },
+            "stillEmployed": false,
+            "index": 3
         }
     ],
     "volunteer": [
@@ -63,32 +80,15 @@
     ],
     "education": [
         {
-            "institution": "ISEN",
-            "area": "Software Development",
-            "studyType": "Engineer Degree",
-            "startDate": "2011-01-01",
-            "endDate": "2013-01-01",
-            "gpa": "4.0",
-            "courses": ["DB1101 - Basic SQL"]
-        },
-        {
-            "institution": "Université d'artois",
-            "area": "",
-            "studyType": "",
-            "startDate": "2011-01-01",
-            "endDate": "",
-            "gpa": "4.0",
-            "courses": ["DB1101 - Basic SQL"]
+            "position": 0,
+            "id": "479f21bb-7074-440b-afa1-4d7f30e9a09f",
+            "studyType": "Bachlor of Science: Business Admin",
+            "area": "Marketing",
+            "institution": "Marketing",
+            "endDate": "2015-01-01"
         }
     ],
-    "awards": [
-        {
-            "title": "Award",
-            "date": "2014-11-01",
-            "awarder": "Company",
-            "summary": "There is no spoon."
-        }
-    ],
+    "awards": [{ "title": "Award", "date": "2014-11-01", "awarder": "Company", "summary": "There is no spoon." }],
     "publications": [
         {
             "name": "Publication",
@@ -99,110 +99,117 @@
         }
     ],
     "skills": [
-        {
-            "name": "Reactaaa",
-            "level": "Master",
-            "value": 100,
-            "keywords": ["HTML", "CSS", "Javascript"]
-        },
-        {
-            "name": "Angular",
-            "level": "Master",
-            "value": 80,
-            "keywords": ["HTML", "CSS", "Javascript"]
-        },
+        { "name": "React", "index": 0, "value": 92, "id": "b8151a33-e5de-41ac-9637-05cbf7c9a033" },
+        { "name": "Android", "index": 1, "value": 80, "id": "fe1e8bcf-470e-4075-90e5-56c67b8e2775" },
+        { "name": "Rails", "index": 2, "value": 70, "id": "c02782b9-7eed-46ac-951b-84e7413f42a1" },
         {
             "name": "NodeJS",
             "level": "Master",
             "value": 40,
-            "keywords": ["HTML", "CSS", "Javascript"]
+            "keywords": ["HTML", "CSS", "Javascript"],
+            "index": 3,
+            "id": "fd5f471a-dbf1-4093-8586-907813c21ad4"
         },
         {
             "name": "Firebase",
             "level": "Master",
-            "value": 60,
-            "keywords": ["HTML", "CSS", "Javascript"]
+            "value": 50,
+            "keywords": ["HTML", "CSS", "Javascript"],
+            "index": 4,
+            "id": "c688ca57-26bf-42fd-9a61-24d75aba5ddc"
         },
-        {
-            "name": "Gmail",
-            "level": "Master",
-            "value": 20,
-            "keywords": ["HTML", "CSS", "Javascript"]
-        },
-        {
-            "name": "K8S",
-            "level": "Master",
-            "value": 80,
-            "keywords": ["HTML", "CSS", "Javascript"]
-        }
+        { "name": "Docker", "index": 5, "value": 34, "id": "b3f9b217-97f2-4a5b-adfe-b8e5c446a1fa" },
+        { "name": "React Native", "index": 6, "value": 60, "id": "4a20d812-dfb8-4eab-afe2-576e50b1e40b" },
+        { "name": "Amazon Web Services", "index": 7, "value": 50, "id": "5244d3e0-aea5-47e5-91f0-8df4f008445b" }
     ],
-    "languages": [{ "language": "English", "value": 100, "fluency": "Native speaker" }],
+    "languages": [
+        {
+            "language": "English",
+            "value": 100,
+            "fluency": "Native speaker",
+            "id": "13e00bcf-7b49-4f62-ae41-2d1dd0971caf",
+            "index": 0
+        },
+        { "index": 1, "id": "a6b0f38a-46d5-4cc0-b606-1e15a13e90ad", "language": "Kotlin", "value": 80 },
+        { "index": 2, "id": "c6d25d70-b275-42ec-9496-45c9b9341f87", "language": "Javascript", "value": 84 },
+        { "index": 3, "id": "4580a0ed-898c-49a5-ab1d-1755e0f449c1", "language": "Ruby", "value": 73 },
+        { "index": 4, "id": "ac87349b-8f5c-4e2e-8212-18fcdf9e62eb", "language": "Java", "value": 75 }
+    ],
     "interests": [
         {
-            "name": "Burritos",
-            "gifUrl": "https://media.giphy.com/media/d8WjGORtSEWqc/giphy.gif"
+            "index": 0,
+            "id": "ee95ea82-014a-460e-93d9-690585b53cb4",
+            "gifUrl": "https://media3.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif?cid=ecf05e47a32e5350b292d8aac7ee9099cf4152cc5cc29043&rid=giphy.gif",
+            "name": "Coding"
         },
         {
-            "name": "Dogs",
-            "gifUrl": "https://media.giphy.com/media/3o85xsGXVuYh8lM3EQ/giphy.gif"
+            "index": 1,
+            "id": "8c594296-a83c-4a6f-bc17-a8a2ff24ef13",
+            "gifUrl": "https://media3.giphy.com/media/yLknS2Wpr2xHi/giphy.gif?cid=ecf05e47086d50b3d967550b473903b12934858de1311c15&rid=giphy.gif",
+            "name": "Guitar"
         },
         {
-            "name": "Tendresse",
-            "gifUrl": "https://media.giphy.com/media/EehnUUCH2JcwU/giphy.gif"
+            "index": 2,
+            "id": "ca205b13-96f3-40b1-98b2-fc38617ec686",
+            "gifUrl": "https://media3.giphy.com/media/1BdcmEdpHST42KBjNs/giphy.gif?cid=ecf05e47a2d24c08ed437c134838019a36b6ef3adcdf53d5&rid=giphy.gif",
+            "name": "DJing"
         },
         {
-            "name": "Something",
-            "gifUrl": "https://media.giphy.com/media/xTiTnIuKP1BLsMTerS/giphy.gif"
-        },
-        {
-            "name": "J'aime faire de la course à pied et des randonnées en famille le weekend."
+            "index": 3,
+            "id": "cd015f04-39d1-4429-aa3a-ccd62d09c22b",
+            "gifUrl": "https://media2.giphy.com/media/LnccQ4gwbYdd4O5PLR/giphy.gif?cid=ecf05e470bcb2d776eecd1991375a361824d8cc41e29a1d5&rid=giphy.gif",
+            "name": "Anything outside"
         }
     ],
     "references": [{ "name": "Jane Doe", "reference": "Reference..." }],
     "projects": [
         {
-            "name": "Développement d'un serpent connecté",
-            "description": "Et oui, vous avez bien entendu !\nUn serpent connecté, c'est comme une montre connectée, mais en serpent, en fait ça ressemble pas une montre, mais ça reste connecté 🚀",
-            "images": []
+            "name": "Coworks (current)",
+            "description": "A coworking management platform dedicated to providing an automated management experience including billing, room booking, visitor registration, event management, and member engagement.",
+            "link": "http://coworksapp.com/",
+            "date": "2016-07-15T00:14:19.884Z",
+            "id": "b8f66a47-2580-420f-89b6-285d95a1a095",
+            "endDate": "2016-07-14"
         }
     ],
     "specific": {
         "basics": {
-            "visaSponsorship": true,
-            "personalDescription": "This is a longer description of me, of my backstory, my backyard, my backfire, my backend, my frontend and my friends."
+            "visaSponsorship": false,
+            "personalDescription": "I am a self-taught developer made CTO by co-founding a coworking software product called Coworks. I am not afraid to work damn hard, but I must have my music & coffee. Catch me outside, woodworking, and building cool shit. "
         },
         "dreamJob": {
             "locations": [
-                { "name": "Valenciennes, France" },
-                { "name": "Lille, France" },
-                { "name": "Paris,France" },
-                { "name": "Paris,France" },
-                { "name": "Lille, France" },
-                { "name": "Valenciennes, France" }
+                { "name": "denver", "id": "a0b75ab7-c8ca-4403-83b7-655df47a0839" },
+                { "name": "austin", "id": "f6df7d85-90dd-47b9-8002-ef978d19cc12" }
             ],
-            "remoteFrequency": "regularly"
+            "remoteFrequency": "regularly",
+            "perks": {
+                "mood": true,
+                "salary": true,
+                "training": true,
+                "perks": true,
+                "work_hours": true,
+                "challenge": true,
+                "responsabilities": true
+            },
+            "salary": "130000"
         },
-        "currentJob": {
-            "issues": { "boring_management": true, "boring_team": true }
-        },
-        "education": { "studiesLevel": 5 },
+        "currentJob": { "issues": { "boring_management": true, "boring_team": true, "salary": true } },
+        "education": { "studiesLevel": 4 },
         "work": {
             "contractTypes": ["permanent"],
             "codingYears": 7,
-            "codingReason": "J'ai commencé à coder sur Amstrad dans ma cave et je n'ai jamais arrêté depuis",
-            "searchState": "activelySearching",
-            "experienceYears": 9
+            "codingReason": "Building products that make people smile",
+            "searchState": "dreamjobOnly",
+            "experienceYears": 5
         },
         "sound": {
-            "embedUrl": "https://open.spotify.com/embed/playlist/37i9dQZF1DWWl7MndYYxge"
+            "embedUrl": "https://open.spotify.com/embed/playlist/37i9dQZF1EtqTzN7MytHJt?si=7_ys8WHlQW2P479golFcKw"
         },
-        "interestedBy": "Angular, la blochain et les chatons."
+        "interestedBy": "GraphQL, React, React-Native, Framer Motion, AWS"
     },
     "resumeCustomization": {
-        "imageHeader": {
-            "url": "https://cdn.filestackcontent.com/8I2wVnCRTFxypXRYLRsp",
-            "alt": "Default Banner"
-        },
+        "imageHeader": { "url": "https://cdn.filestackcontent.com/8I2wVnCRTFxypXRYLRsp", "alt": "Default Banner" },
         "cardsOrder": [
             { "type": "basics", "variant": 4 },
             { "type": "projects", "variant": 4 },
@@ -215,9 +222,48 @@
             { "type": "language", "variant": 4 },
             { "type": "soundtrack", "variant": 4 }
         ],
-        "fields": {
-            "work": {
-                "customDateFormat": "YYYY"
+        "fields": { "work": { "customDateFormat": "YYYY" } },
+        "theme": {
+            "palette": {
+                "primary": {
+                    "50": "#e6f0f3",
+                    "100": "#cde2e8",
+                    "200": "#9bc5d1",
+                    "300": "#68a7b9",
+                    "400": "#368aa2",
+                    "500": "#046d8b",
+                    "600": "#03576f",
+                    "700": "#024153",
+                    "800": "#022c38",
+                    "900": "#01161c",
+                    "contrastDefaultColor": "light"
+                },
+                "secondary": {
+                    "50": "#eaf4f4",
+                    "100": "#d6e9e9",
+                    "200": "#acd3d3",
+                    "300": "#83bebe",
+                    "400": "#59a8a8",
+                    "500": "#309292",
+                    "600": "#267575",
+                    "700": "#1d5858",
+                    "800": "#133a3a",
+                    "900": "#0a1d1d",
+                    "contrastDefaultColor": "light"
+                },
+                "tertiary": {
+                    "50": "#eaf8f7",
+                    "100": "#d5f1ee",
+                    "200": "#ace3de",
+                    "300": "#82d4cd",
+                    "400": "#59c6bd",
+                    "500": "#2fb8ac",
+                    "600": "#26938a",
+                    "700": "#1c6e67",
+                    "800": "#134a45",
+                    "900": "#092522",
+                    "contrastDefaultColor": "light"
+                }
             }
         }
     }
